@@ -1,2 +1,43 @@
 body {
-  background: #cccccc; }
+  background-color: #f6fafd;
+  font-family: sans-serif; }
+
+.header-container {
+  height: auto;
+  max-width: 75%;
+  margin: 0 auto;
+  background: white;
+  border-top: #40627b solid 5px;
+  border-bottom: #dadfe2 solid 1px;
+  display: flex; }
+  .header-container .step-container {
+    align-items: center;
+    display: flex;
+    padding: 20px;
+    flex: 1;
+    border-left: #dadfe2 solid 1px;
+    border-right: #dadfe2 solid 1px; }
+    .header-container .step-container .col {
+      flex: 1; }
+      .header-container .step-container .col .step-text {
+        flex: 1;
+        margin: 0;
+        font-size: 14px;
+        color: #8b9093; }
+      .header-container .step-container .col .step-detail {
+        margin: 5px 0 0;
+        color: #40627b; }
+      .header-container .step-container .col .step-icon {
+        float: right;
+        height: 25px;
+        width: 25px;
+        background: #dadfe2;
+        border-radius: 50%; }
+
+.content-container {
+  max-width: 75%;
+  height: auto;
+  width: 50%;
+  margin: 20px auto;
+  padding: 10px;
+  background: white; }

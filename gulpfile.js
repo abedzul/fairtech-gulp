@@ -22,7 +22,7 @@ gulp.task("scripts", async function () {
 
 gulp.task("styles", async function () {
   gulp
-    .src("src/sass/*.scss")
+    .src("src/scss/*.scss")
     .pipe(sass().on("error", sass.logError))
     .pipe(gulp.dest("dist/css"));
 });
@@ -35,6 +35,6 @@ gulp.task(
 gulp.task("watch", async function () {
   gulp.watch("src/js/*.js", gulp.series("scripts"));
   gulp.watch("src/img/*", gulp.series("images"));
-  gulp.watch("src/sass/*.scss", gulp.series("styles"));
+  gulp.watch("src/scss/*.scss", gulp.series("styles"));
   gulp.watch("src/*.html", gulp.series("copyHtml"));
 });
