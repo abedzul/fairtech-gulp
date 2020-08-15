@@ -29,7 +29,7 @@ gulp.task("styles", async function () {
 });
 
 gulp.task("miniJson", async function () {
-  gulp.src("src/js/*.json").pipe(jsonMinify()).pipe(gulp.dest("dist/js"));
+  gulp.src("src/*.json").pipe(jsonMinify()).pipe(gulp.dest("dist"));
 });
 
 gulp.task(
@@ -42,5 +42,5 @@ gulp.task("watch", async function () {
   gulp.watch("src/img/*", gulp.series("images"));
   gulp.watch("src/scss/*.scss", gulp.series("styles"));
   gulp.watch("src/*.html", gulp.series("copyHtml"));
-  gulp.watch("src/js/*.json", gulp.series("miniJson"));
+  gulp.watch("src/*.json", gulp.series("miniJson"));
 });

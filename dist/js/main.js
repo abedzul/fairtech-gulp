@@ -1,1 +1,1 @@
-function loadJSON(e,t,n){var o=new XMLHttpRequest;o.onreadystatechange=function(){o.readyState===XMLHttpRequest.DONE&&(200===o.status?t&&t(JSON.parse(o.responseText)):n&&n(o))},o.open("GET",e,!0),o.send()}loadJSON("dataHotel.json",function(e){console.log(e)},function(e){console.error(e)});
+console.log("hai ini hotel");
