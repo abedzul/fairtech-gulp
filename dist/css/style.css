@@ -2,9 +2,12 @@ body {
   background-color: #f6fafd;
   font-family: sans-serif; }
 
+p {
+  margin: 0; }
+
 .header-container {
   height: auto;
-  max-width: 75%;
+  max-width: 1000px;
   margin: 0 auto;
   background: white;
   border-top: #40627b solid 5px;
@@ -17,27 +20,106 @@ body {
     flex: 1;
     border-left: #dadfe2 solid 1px;
     border-right: #dadfe2 solid 1px; }
-    .header-container .step-container .col {
-      flex: 1; }
-      .header-container .step-container .col .step-text {
-        flex: 1;
+    .header-container .step-container .col-left {
+      width: 75%; }
+      .header-container .step-container .col-left .step-text {
         margin: 0;
-        font-size: 14px;
+        font-size: 0.75em;
         color: #8b9093; }
-      .header-container .step-container .col .step-detail {
+      .header-container .step-container .col-left .step-detail {
         margin: 5px 0 0;
-        color: #40627b; }
-      .header-container .step-container .col .step-icon {
+        color: #40627b;
+        font-size: 1em; }
+    .header-container .step-container .col-right {
+      flex: 1; }
+      .header-container .step-container .col-right .step-icon {
         float: right;
         height: 25px;
         width: 25px;
         background: #dadfe2;
-        border-radius: 50%; }
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .header-container .step-container .col-right .step-icon .fas {
+          color: #40627b; }
+      .header-container .step-container .col-right .step-icon-undone {
+        float: right;
+        height: 25px;
+        width: 25px;
+        border-radius: 50%;
+        border: #dadfe2 2px solid; }
 
 .content-container {
-  max-width: 75%;
+  max-width: 960px;
   height: auto;
-  width: 50%;
   margin: 20px auto;
-  padding: 10px;
-  background: white; }
+  padding: 20px;
+  background: white;
+  border: #dadfe2 solid 1px;
+    border-radius: 5px; }
+  .content-container .hotel-detail-container {
+    display: flex;
+    align-items: center; }
+    .content-container .hotel-detail-container .hotel-name {
+      font-size: 1.5em;
+      font-weight: bold;
+      color: #40627b;
+      margin-right: 20px; }
+    .content-container .hotel-detail-container .hotel-star {
+      flex: 1; }
+      .content-container .hotel-detail-container .hotel-star .fas {
+        color: #f8bb3c;
+        margin-right: 5px; }
+  .content-container .hotel-address {
+    margin: 20px 0;
+    color: #8b9093;
+    font-size: 1em; }
+    .content-container .hotel-address .fas {
+      margin-right: 5px; }
+  .content-container .hotel-trip-container {
+    background: #f6fafd;
+    border: #dadfe2 1px solid;
+      border-radius: 5px;
+    display: flex;
+    padding: 10px; }
+    .content-container .hotel-trip-container .col {
+      flex: 1;
+      display: flex;
+      align-items: center; }
+      .content-container .hotel-trip-container .col .col-left .fas {
+        color: #8b9093;
+        font-size: 1.5em;
+        margin-right: 10px; }
+      .content-container .hotel-trip-container .col .col-right .title {
+        color: #8b9093;
+        font-size: 1em; }
+      .content-container .hotel-trip-container .col .col-right .content {
+        margin-top: 5px;
+        color: #40627b;
+        font-size: 1em;
+        font-weight: bold; }
+  .content-container .content-subheader-text {
+    margin: 30px 0;
+    font-size: 1em;
+    font-weight: bold;
+    color: #40627b; }
+  .content-container .packages-header {
+    display: flex; }
+    .content-container .packages-header .header-text {
+      color: #8b9093;
+      font-size: 0.75em;
+      font-weight: bold; }
+    .content-container .packages-header .col-left {
+      width: 35%; }
+    .content-container .packages-header .col-right {
+      flex: 1; }
+  .content-container .packages-content {
+    margin: 10px 0;
+    border: #dadfe2 1px solid;
+      border-radius: 5px;
+    display: flex; }
+    .content-container .packages-content .col-left {
+      width: 35%; }
+    .content-container .packages-content .col-right {
+      flex: 1; }

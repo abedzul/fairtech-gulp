@@ -1,22 +1,25 @@
-$first: #f6fafd;
-$second: #40627b;
-$third: #dadfe2;
-$fourth: #14252f;
-$fifth: #8b9093;
+$lightblue: #f6fafd;
+$darkblue: #40627b;
+$lightgrey: #dadfe2;
+$darkgrey: #8b9093;
 
 body {
-  background-color: $first;
+  background-color: $lightblue;
   font-family: sans-serif;
+}
+
+p {
+  margin: 0;
 }
 
 .header-container {
   height: auto;
-  max-width: 75%;
+  max-width: 1000px;
   margin: 0 auto;
   background: white;
   border: {
-    top: $second solid 5px;
-    bottom: $third solid 1px;
+    top: $darkblue solid 5px;
+    bottom: $lightgrey solid 1px;
   }
   display: flex;
 
@@ -26,43 +29,177 @@ body {
     padding: 20px;
     flex: 1;
     border: {
-      left: $third solid 1px;
-      right: $third solid 1px;
+      left: $lightgrey solid 1px;
+      right: $lightgrey solid 1px;
     }
 
-    .col {
-      flex: 1;
+    .col-left {
+      width: 75%;
 
       .step-text {
-        flex: 1;
         margin: 0;
-        font: {
-          size: 14px;
-        }
-        color: $fifth;
+        font-size: 0.75em;
+        color: $darkgrey;
       }
 
       .step-detail {
         margin: 5px 0 0;
-        color: $second;
+        color: $darkblue;
+        font-size: 1em;
       }
+    }
+
+    .col-right {
+      flex: 1;
 
       .step-icon {
         float: right;
         height: 25px;
         width: 25px;
-        background: $third;
+        background: $lightgrey;
         border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .fas {
+          color: $darkblue;
+        }
+      }
+
+      .step-icon-undone {
+        float: right;
+        height: 25px;
+        width: 25px;
+        border-radius: 50%;
+        border: $lightgrey 2px solid;
       }
     }
   }
 }
 
 .content-container {
-  max-width: 75%;
+  max-width: 960px;
   height: auto;
-  width: 50%;
   margin: 20px auto;
-  padding: 10px;
+  padding: 20px;
   background: white;
+  border: $lightgrey solid 1px {
+    radius: 5px;
+  }
+
+  .hotel-detail-container {
+    display: flex;
+    align-items: center;
+
+    .hotel-name {
+      font: {
+        size: 1.5em;
+        weight: bold;
+      }
+      color: $darkblue;
+      margin-right: 20px;
+    }
+
+    .hotel-star {
+      flex: 1;
+
+      .fas {
+        color: #f8bb3c;
+        margin-right: 5px;
+      }
+    }
+  }
+
+  .hotel-address {
+    margin: 20px 0;
+    color: $darkgrey;
+    font-size: 1em;
+
+    .fas {
+      margin-right: 5px;
+    }
+  }
+
+  .hotel-trip-container {
+    background: $lightblue;
+    border: $lightgrey 1px solid {
+      radius: 5px;
+    }
+    display: flex;
+    padding: 10px;
+
+    .col {
+      flex: 1;
+      display: flex;
+      align-items: center;
+
+      .col-left {
+        .fas {
+          color: $darkgrey;
+          font-size: 1.5em;
+          margin-right: 10px;
+        }
+      }
+      .col-right {
+        .title {
+          color: $darkgrey;
+          font-size: 1em;
+        }
+        .content {
+          margin-top: 5px;
+          color: $darkblue;
+          font: {
+            size: 1em;
+            weight: bold;
+          }
+        }
+      }
+    }
+  }
+
+  .content-subheader-text {
+    margin: 30px 0;
+    font: {
+      size: 1em;
+      weight: bold;
+    }
+    color: $darkblue;
+  }
+
+  .packages-header {
+    display: flex;
+
+    .header-text {
+      color: $darkgrey;
+      font: {
+        size: 0.75em;
+        weight: bold;
+      }
+    }
+
+    .col-left {
+      width: 35%;
+    }
+
+    .col-right {
+      flex: 1;
+    }
+  }
+
+  .packages-content {
+    margin: 10px 0;
+    border: $lightgrey 1px solid {
+      radius: 5px;
+    }
+    display: flex;
+
+    .col-left {
+      width: 35%;
+    }
+
+    .col-right {
+      flex: 1;
+    }
+  }
 }

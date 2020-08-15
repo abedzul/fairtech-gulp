@@ -5,51 +5,160 @@
     <title>Hotel Gulp App</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
   </head>
   <body>
     <div class="header-container">
       <div class="step-container">
-        <div class="col">
+        <div class="col-left">
           <p class="step-text">STEP 1</p>
           <p class="step-detail">Select room</p>
         </div>
-        <div class="col">
+        <div class="col-right">
           <div class="step-icon">            
-            
+            <i class="fas fa-check"></i>
           </div>
         </div>
       </div>      
+
       <div class="step-container">
-        <div class="col">
-        <p class="step-text">STEP 2</p>
-        <p class="step-detail">Enter your information</p>
+        <div class="col-left">
+          <p class="step-text">STEP 2</p>
+          <p class="step-detail">Enter your information</p>
         </div>
-        <div class="col">
+        <div class="col-right">
           <div class="step-icon">            
-            
+            <i class="fas fa-check"></i>
           </div>
         </div>
       </div>      
+
       <div class="step-container">
-        <div class="col">
-        
-        <p class="step-text">STEP 3</p>
-        <p class="step-detail">
-          <b>
-            Booking confirmation
-          </b>
-        </p>
+        <div class="col-left">        
+          <p class="step-text">STEP 3</p>
+          <p class="step-detail">
+            <b>
+              Booking confirmation
+            </b>
+          </p>
         </div>
-        <div class="col">
-          <div class="step-icon">            
-            
-          </div>
+        <div class="col-right">
+          <div class="step-icon-undone"></div>
         </div>
       </div>      
     </div>
+
     <div class="content-container">
-      ini content
+      <div class="hotel-detail-container">
+        <p class="hotel-name">
+          Blue Corner Dive Resort
+        </p>      
+        <p class="hotel-star">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </p>
+      </div>
+      
+      <p class="hotel-address">
+        <i class="fas fa-map-marker-alt"></i>
+        Jalan Raya, Jungutbatu, Nusa Lembongan Island, Bali 80771, Indonesia        
+      </p>
+
+      <div class="hotel-trip-container">
+        <div class="col">
+          <div class="col-left">
+            <i class="fas fa-calendar-alt"></i>
+          </div>
+          <div class="col-right">
+            <p class="title">Date Start</p>
+            <p class="content">14 June 2020</p>
+          </div>
+        </div>
+        
+        <div class="col">
+          <div class="col-left">
+            <i class="fas fa-calendar-alt"></i>
+          </div>
+          <div class="col-right">
+            <p class="title">Date End</p>
+            <p class="content">21 June 2020</p>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="col-left">
+            <i class="fas fa-hotel"></i>
+          </div>
+          <div class="col-right">
+            <p class="title">Duration</p>
+            <p class="content">7 night(s)</p>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="col-left">
+            <i class="fas fa-users"></i>
+          </div>
+          <div class="col-right">
+            <p class="title">Guest(s)</p>
+            <p class="content">2 Guest(s)</p>
+          </div>
+        </div>
+      </div>
+
+      <p class="content-subheader-text">
+        Packages
+      </p>
+
+      <div class="packages-header">
+        <div class="col-left">
+          <p class="header-text">
+            Selected Packages
+          </p>  
+        </div>
+        <div class="col-right">
+          <p class="header-text">
+            Price
+          </p>  
+        </div>
+        <div class="col-left">
+          <p class="header-text">
+            Quantity
+          </p>  
+        </div>
+        <div class="col-right">
+          <p class="header-text">
+            Total Price
+          </p>  
+        </div>
+      </div>
+
+      <div class="packages-content">
+        <div class="col-left">
+          1
+        </div>
+        <div class="col-right">
+          1
+        </div>
+        <div class="col-left">
+          1
+        </div>
+        <div class="col-right">
+          1
+        </div>
+      </div>
+
+      <p class="content-subheader-text">
+        Personal Information
+      </p>
+
+      <p class="content-subheader-text">
+        Next Step
+      </p>
     </div>
   </body>
   <script src="js/main.js"></script>
