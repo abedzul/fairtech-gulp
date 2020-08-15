@@ -51,8 +51,8 @@
 
     <div class="content-container">
       <div class="hotel-detail-container">
-        <p class="hotel-name">
-          Blue Corner Dive Resort
+        <p class="hotel-name" id="namaHotel">
+          <!-- nama hotel -->
         </p>      
         <p class="hotel-star">
           <i class="fas fa-star"></i>
@@ -65,7 +65,9 @@
       
       <p class="hotel-address">
         <i class="fas fa-map-marker-alt"></i>
-        Jalan Raya, Jungutbatu, Nusa Lembongan Island, Bali 80771, Indonesia        
+        <span id="alamatHotel">
+          <!-- alamat hotel -->
+        </span>        
       </p>
 
       <table class="hotel-trip">
@@ -80,10 +82,21 @@
           <td class="title">Guest(s)</td>
         </tr>
         <tr>
-          <td class="content">14 June 2020</td>
-          <td class="content">21 June 2020</td>
-          <td class="content">7 night(s)</td>
-          <td class="content">2 Guest(s)</td>
+          <td class="content" id="checkinHotel">
+            <!-- tanggal check in hotel -->
+          </td>
+          <td class="content" id="checkoutHotel">
+            <!-- tanggal check out hotel -->
+          </td>
+          <td class="content">
+            7 night(s)
+          </td>
+          <td class="content">
+            <span id="tamuHotel">
+              <!-- jumlah tamu hotel -->
+            </span>
+            Guest(s)
+          </td>
         </tr>
       </table>
 
@@ -106,16 +119,33 @@
             <img src="../src/img/hotel-bedroom.jpg" alt="">
           </td>
           <td class="second title">
-            <b>
-              Double - Bedroom Pool Villa
+            <b id="namaKamar">
+              <!-- nama kamar hotel -->
             </b>
           </td>
-          <td class="third title">IDR 3.050.000</td>          
-          <td class="fourth title">7</td>
-          <td class="fifth title">IDR 21.350.000</td>
+          <td class="third title">
+            IDR
+            <span id="hargaKamar">
+              <!-- harga kamar per malam -->
+            </span>
+          </td>          
+          <td class="fourth title" id="jumlahKamar">
+            7
+          </td>
+          <td class="fifth title">
+            IDR 
+            <span id="totalHargaKamar">
+              <!-- total harga kamar -->              
+            </span>
+          </td>
         </tr>                
         <tr>
-          <td class="second title">Bed & Breakfast</td>
+          <td class="second title">            
+            Bed & 
+            <span id="fasilitasKamar">
+              <!-- fasilitas kamar -->
+            </span>            
+          </td>
           <td class="third content">per night</td>
         </tr>
       </table>
@@ -125,14 +155,24 @@
           <td class="first"></td>
           <td class="second">Tax</td>
           <td class="third">10%</td>          
-          <td class="fourth">IDR 2.135.000</td>
+          <td class="fourth">
+            IDR 
+            <span id="totalPajak">
+              <!-- total pajak -->              
+            </span>
+          </td>
         </tr>                
       </table>
       
       <table class="packages-total">
         <tr>
           <td class="first title">Total Room Price</td>
-          <td rowspan="2" class="second">IDR 23.485.000</td>          
+          <td rowspan="2" class="second">
+            IDR 
+            <span id="totalAll">
+              <!-- total harga kamar dengan pajak -->              
+            </span>            
+          </td>          
         </tr>        
         <tr>
           <td class="first">for 2 Guest in 1 room</td>
@@ -150,9 +190,15 @@
           <th class="third">Email Address</th>
         </tr>
         <tr>
-          <td class="first">John Doe</td>
-          <td class="second">+62 877 1818 2424</td>
-          <td class="third">johndooeeee@gmail.com</td>
+          <td class="first" id="namaTamu">
+            <!-- nama tamu -->
+          </td>
+          <td class="second" id="teleponTamu">
+            <!-- nomor telepon tamu -->
+          </td>
+          <td class="third" id="emailTamu">
+            <!-- email tamu -->
+          </td>
         </tr>        
       </table>
 
@@ -183,4 +229,5 @@
     </div>
   </body>
   <script src="js/main.js"></script>  
+  </script>
 </html>

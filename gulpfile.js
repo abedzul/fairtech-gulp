@@ -1,9 +1,8 @@
 const gulp = require("gulp");
 const imagemin = require("gulp-imagemin");
-const uglify = require("gulp-uglify");
+const uglify = require("gulp-uglify-es").default;
 const sass = require("gulp-sass");
 const concat = require("gulp-concat");
-const jsonMinify = require("gulp-json-minify");
 
 gulp.task("copyHtml", async function () {
   gulp.src("src/*.html").pipe(gulp.dest("dist"));
@@ -28,13 +27,9 @@ gulp.task("styles", async function () {
     .pipe(gulp.dest("dist/css"));
 });
 
-gulp.task("miniJson", async function () {
-  gulp.src("src/*.json").pipe(jsonMinify()).pipe(gulp.dest("dist"));
-});
-
 gulp.task(
   "default",
-  gulp.parallel(["copyHtml", "images", "styles", "scripts", "miniJson"])
+  gulp.parallel(["copyHtml", "images", "styles", "scripts"])
 );
 
 gulp.task("watch", async function () {
@@ -42,5 +37,4 @@ gulp.task("watch", async function () {
   gulp.watch("src/img/*", gulp.series("images"));
   gulp.watch("src/scss/*.scss", gulp.series("styles"));
   gulp.watch("src/*.html", gulp.series("copyHtml"));
-  gulp.watch("src/*.json", gulp.series("miniJson"));
 });
