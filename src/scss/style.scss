@@ -122,39 +122,34 @@ p {
     }
   }
 
-  .hotel-trip-container {
+  .hotel-trip {
+    text-align: left;
+    width: 100%;
     background: $lightblue;
+    padding: 20px;
     border: $lightgrey 1px solid {
       radius: 5px;
     }
-    display: flex;
-    padding: 10px;
 
-    .col {
-      flex: 1;
-      display: flex;
-      align-items: center;
+    .left {
+      width: 30px;
 
-      .col-left {
-        .fas {
-          color: $darkgrey;
-          font-size: 1.5em;
-          margin-right: 10px;
-        }
+      .fas {
+        color: $darkgrey;
+        font-size: 1.5em;
+        margin-right: 5px;
       }
-      .col-right {
-        .title {
-          color: $darkgrey;
-          font-size: 1em;
-        }
-        .content {
-          margin-top: 5px;
-          color: $darkblue;
-          font: {
-            size: 1em;
-            weight: bold;
-          }
-        }
+    }
+
+    td.title {
+      color: $darkgrey;
+      font-size: 1em;
+    }
+    td.content {
+      color: $darkblue;
+      font: {
+        size: 1em;
+        weight: bold;
       }
     }
   }
@@ -169,144 +164,158 @@ p {
   }
 
   .packages-header {
-    display: flex;
+    text-align: left;
+    width: 100%;
+    margin-bottom: 10px;
 
-    .header-text {
+    th {
+      font-size: 0.75em;
       color: $darkgrey;
-      font: {
-        size: 0.75em;
-        weight: bold;
-      }
     }
 
-    .col-one {
-      width: 450px;
+    .first {
+      width: 435px;
     }
 
-    .col-two {
-      flex: 1;
-    }
-
-    .col-three {
+    .second {
       width: 200px;
     }
 
-    .col-four {
-      flex: 1;
+    .third {
+      width: 200px;
+    }
+
+    .fourth {
       text-align: right;
-      padding-right: 10px;
+      padding-right: 20px;
     }
-  }
-
-  .title {
-    font-size: 1em;
-    color: $darkblue;
-  }
-
-  .content {
-    font-size: 0.75em;
-    color: $darkgrey;
-    margin-top: 5px;
-  }
-
-  .col-1 {
-    width: 100px;
-    padding: 10px;
-
-    img {
-      width: 100%;
-      border-radius: 5px;
-    }
-  }
-
-  .col-2 {
-    padding: 10px;
-    width: 300px;
-  }
-
-  .col-3 {
-    padding: 10px;
-    flex: 1;
-  }
-
-  .col-4 {
-    padding: 10px;
-    width: 200px;
-  }
-
-  .col-5 {
-    padding: 10px;
-    flex: 1;
-    text-align: right;
   }
 
   .packages-content {
-    margin: 10px 0 0;
     border: $lightgrey 1px solid {
       top-left-radius: 5px;
       top-right-radius: 5px;
     }
-    display: flex;
+    text-align: left;
+    width: 100%;
+    padding: 20px;
+
+    .first {
+      width: 100px;
+
+      img {
+        width: 85%;
+        border-radius: 5px;
+      }
+    }
+
+    .second {
+      width: 310px;
+    }
+
+    .third {
+      width: 200px;
+    }
+
+    .fourth {
+      width: 100px;
+    }
+
+    .fifth {
+      text-align: right;
+    }
+
+    .title {
+      font-size: 1em;
+      color: $darkblue;
+    }
+
+    .content {
+      font-size: 0.75em;
+      color: $darkgrey;
+    }
   }
 
   .packages-tax {
     border: $lightgrey 1px solid;
-    display: flex;
+    text-align: left;
+    width: 100%;
+    padding: 20px;
+
+    .first {
+      width: 100px;
+    }
+
+    .second {
+      width: 310px;
+    }
+
+    .fourth {
+      text-align: right;
+    }
+
+    td {
+      font-size: 1em;
+      color: $darkblue;
+    }
   }
 
   .packages-total {
+    text-align: left;
+    width: 100%;
     background: $skyblue;
-    display: flex;
-    align-items: center;
+    padding: 20px;
     border: {
       bottom-left-radius: 5px;
       bottom-right-radius: 5px;
     }
 
-    .col-left {
-      padding: 10px;
-      flex: 1;
+    td {
+      font-size: 1em;
+      color: $darkblue;
     }
 
-    .col-right {
-      padding: 10px;
-      flex: 1;
-      text-align: right;
+    .title {
+      font: {
+        size: 1em;
+        weight: bold;
+      }
+      color: $darkblue;
+    }
 
-      .price {
-        color: $darkblue;
-        font: {
-          size: 1.25em;
-          weight: bold;
-        }
+    .second {
+      text-align: right;
+      color: $darkblue;
+      font: {
+        size: 1.25em;
+        weight: bold;
       }
     }
   }
 
-  .user-information {
-    display: flex;
+  .user-info {
+    text-align: left;
+    width: 100%;
 
-    .title {
-      font-size: 0.75em;
+    th {
+      font: {
+        size: 0.75em;
+        weight: normal;
+      }
       color: $darkgrey;
     }
 
-    .content {
+    td {
       font-size: 1em;
       color: $darkblue;
-      margin-top: 5px;
     }
 
-    .col-left {
-      width: 450px;
+    .first {
+      width: 435px;
     }
 
-    .col-center {
-      flex: 1;
-    }
-
-    .col-right {
-      flex: 1;
+    .second {
+      width: 350px;
     }
   }
 
@@ -354,6 +363,7 @@ p {
         size: 1.25em;
         weight: bold;
       }
+      cursor: pointer;
     }
   }
 }

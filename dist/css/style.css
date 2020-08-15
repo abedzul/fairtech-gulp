@@ -77,116 +77,120 @@ p {
     font-size: 1em; }
     .content-container .hotel-address .fas {
       margin-right: 5px; }
-  .content-container .hotel-trip-container {
+  .content-container .hotel-trip {
+    text-align: left;
+    width: 100%;
     background: #f6fafd;
+    padding: 20px;
     border: #dadfe2 1px solid;
-      border-radius: 5px;
-    display: flex;
-    padding: 10px; }
-    .content-container .hotel-trip-container .col {
-      flex: 1;
-      display: flex;
-      align-items: center; }
-      .content-container .hotel-trip-container .col .col-left .fas {
+      border-radius: 5px; }
+    .content-container .hotel-trip .left {
+      width: 30px; }
+      .content-container .hotel-trip .left .fas {
         color: #8b9093;
         font-size: 1.5em;
-        margin-right: 10px; }
-      .content-container .hotel-trip-container .col .col-right .title {
-        color: #8b9093;
-        font-size: 1em; }
-      .content-container .hotel-trip-container .col .col-right .content {
-        margin-top: 5px;
-        color: #40627b;
-        font-size: 1em;
-        font-weight: bold; }
+        margin-right: 5px; }
+    .content-container .hotel-trip td.title {
+      color: #8b9093;
+      font-size: 1em; }
+    .content-container .hotel-trip td.content {
+      color: #40627b;
+      font-size: 1em;
+      font-weight: bold; }
   .content-container .content-subheader-text {
     margin: 30px 0;
     font-size: 1em;
     font-weight: bold;
     color: #40627b; }
   .content-container .packages-header {
-    display: flex; }
-    .content-container .packages-header .header-text {
-      color: #8b9093;
+    text-align: left;
+    width: 100%;
+    margin-bottom: 10px; }
+    .content-container .packages-header th {
       font-size: 0.75em;
-      font-weight: bold; }
-    .content-container .packages-header .col-one {
-      width: 450px; }
-    .content-container .packages-header .col-two {
-      flex: 1; }
-    .content-container .packages-header .col-three {
+      color: #8b9093; }
+    .content-container .packages-header .first {
+      width: 435px; }
+    .content-container .packages-header .second {
       width: 200px; }
-    .content-container .packages-header .col-four {
-      flex: 1;
+    .content-container .packages-header .third {
+      width: 200px; }
+    .content-container .packages-header .fourth {
       text-align: right;
-      padding-right: 10px; }
-  .content-container .title {
-    font-size: 1em;
-    color: #40627b; }
-  .content-container .content {
-    font-size: 0.75em;
-    color: #8b9093;
-    margin-top: 5px; }
-  .content-container .col-1 {
-    width: 100px;
-    padding: 10px; }
-    .content-container .col-1 img {
-      width: 100%;
-      border-radius: 5px; }
-  .content-container .col-2 {
-    padding: 10px;
-    width: 300px; }
-  .content-container .col-3 {
-    padding: 10px;
-    flex: 1; }
-  .content-container .col-4 {
-    padding: 10px;
-    width: 200px; }
-  .content-container .col-5 {
-    padding: 10px;
-    flex: 1;
-    text-align: right; }
+      padding-right: 20px; }
   .content-container .packages-content {
-    margin: 10px 0 0;
     border: #dadfe2 1px solid;
       border-top-left-radius: 5px;
       border-top-right-radius: 5px;
-    display: flex; }
-  .content-container .packages-tax {
-    border: #dadfe2 1px solid;
-    display: flex; }
-  .content-container .packages-total {
-    background: #e3f5ff;
-    display: flex;
-    align-items: center;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px; }
-    .content-container .packages-total .col-left {
-      padding: 10px;
-      flex: 1; }
-    .content-container .packages-total .col-right {
-      padding: 10px;
-      flex: 1;
+    text-align: left;
+    width: 100%;
+    padding: 20px; }
+    .content-container .packages-content .first {
+      width: 100px; }
+      .content-container .packages-content .first img {
+        width: 85%;
+        border-radius: 5px; }
+    .content-container .packages-content .second {
+      width: 310px; }
+    .content-container .packages-content .third {
+      width: 200px; }
+    .content-container .packages-content .fourth {
+      width: 100px; }
+    .content-container .packages-content .fifth {
       text-align: right; }
-      .content-container .packages-total .col-right .price {
-        color: #40627b;
-        font-size: 1.25em;
-        font-weight: bold; }
-  .content-container .user-information {
-    display: flex; }
-    .content-container .user-information .title {
+    .content-container .packages-content .title {
+      font-size: 1em;
+      color: #40627b; }
+    .content-container .packages-content .content {
       font-size: 0.75em;
       color: #8b9093; }
-    .content-container .user-information .content {
+  .content-container .packages-tax {
+    border: #dadfe2 1px solid;
+    text-align: left;
+    width: 100%;
+    padding: 20px; }
+    .content-container .packages-tax .first {
+      width: 100px; }
+    .content-container .packages-tax .second {
+      width: 310px; }
+    .content-container .packages-tax .fourth {
+      text-align: right; }
+    .content-container .packages-tax td {
       font-size: 1em;
+      color: #40627b; }
+  .content-container .packages-total {
+    text-align: left;
+    width: 100%;
+    background: #e3f5ff;
+    padding: 20px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px; }
+    .content-container .packages-total td {
+      font-size: 1em;
+      color: #40627b; }
+    .content-container .packages-total .title {
+      font-size: 1em;
+      font-weight: bold;
+      color: #40627b; }
+    .content-container .packages-total .second {
+      text-align: right;
       color: #40627b;
-      margin-top: 5px; }
-    .content-container .user-information .col-left {
-      width: 450px; }
-    .content-container .user-information .col-center {
-      flex: 1; }
-    .content-container .user-information .col-right {
-      flex: 1; }
+      font-size: 1.25em;
+      font-weight: bold; }
+  .content-container .user-info {
+    text-align: left;
+    width: 100%; }
+    .content-container .user-info th {
+      font-size: 0.75em;
+      font-weight: normal;
+      color: #8b9093; }
+    .content-container .user-info td {
+      font-size: 1em;
+      color: #40627b; }
+    .content-container .user-info .first {
+      width: 435px; }
+    .content-container .user-info .second {
+      width: 350px; }
   .content-container .next-step ul {
     padding: 0 20px;
     font-size: 1em;
@@ -215,4 +219,5 @@ p {
       border: none;
         border-radius: 5px;
       font-size: 1.25em;
-      font-weight: bold; }
+      font-weight: bold;
+      cursor: pointer; }
