@@ -332,10 +332,13 @@ p {
 
   .check-tc {
     margin-top: 30px;
+    display: flex;
 
-    label {
+    p {
       font-size: 1em;
       color: $darkblue;
+      margin-left: 5px;
+      flex: 1;
 
       span {
         font-weight: bold;

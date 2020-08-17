@@ -198,11 +198,14 @@ p {
   .content-container .next-step li {
     margin-bottom: 5px; }
   .content-container .check-tc {
-    margin-top: 30px; }
-    .content-container .check-tc label {
+    margin-top: 30px;
+    display: flex; }
+    .content-container .check-tc p {
       font-size: 1em;
-      color: #40627b; }
-      .content-container .check-tc label span {
+      color: #40627b;
+      margin-left: 5px;
+      flex: 1; }
+      .content-container .check-tc p span {
         font-weight: bold;
         text-decoration: underline;
         cursor: pointer; }
