@@ -32,6 +32,13 @@ document.getElementById("alamatHotel").innerHTML = dataHotel.alamat_hotel;
 document.getElementById("checkinHotel").innerHTML = dataHotel.check_in;
 document.getElementById("checkoutHotel").innerHTML = dataHotel.check_out;
 
+// menghitung jumlah hari tamu menginap
+let dateIn = new Date(dataHotel.check_in);
+let dateOut = new Date(dataHotel.check_out);
+let diffTime = dateOut.getTime() - dateIn.getTime();
+let diffDays = diffTime / (1000 * 3600 * 24);
+document.getElementById("malamHotel").innerHTML = diffDays;
+
 // menampilkan jumlah tamu hotel
 document.getElementById("tamuHotel").innerHTML = dataHotel.jumlah_tamu;
 

@@ -208,7 +208,8 @@ p {
       color: #40627b; }
       .content-container .check-tc .text span {
         font-weight: bold;
-        text-decoration: underline; }
+        text-decoration: underline;
+        cursor: pointer; }
   .content-container .request-button {
     margin-top: 30px; }
     .content-container .request-button button {
