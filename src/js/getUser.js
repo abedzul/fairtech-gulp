@@ -4,7 +4,7 @@ const dataTamu = {
   email: "johndooeeee@gmail.com",
 };
 
-// display data tamu
+// menampilkan data tamu
 document.getElementById("namaTamu").innerHTML = dataTamu.nama_tamu;
 document.getElementById("teleponTamu").innerHTML = dataTamu.phone;
 document.getElementById("emailTamu").innerHTML = dataTamu.email;

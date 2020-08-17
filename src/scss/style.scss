@@ -332,13 +332,8 @@ p {
 
   .check-tc {
     margin-top: 30px;
-    display: flex;
 
-    .fas {
-      color: $darkblue;
-      margin-right: 10px;
-    }
-    .text {
+    label {
       font-size: 1em;
       color: $darkblue;
 
@@ -356,7 +351,7 @@ p {
       padding: 20px 0;
       width: 100%;
       color: white;
-      background: $darkblue;
+      background: $darkgrey;
       border: none {
         radius: 5px;
       }

@@ -198,15 +198,11 @@ p {
   .content-container .next-step li {
     margin-bottom: 5px; }
   .content-container .check-tc {
-    margin-top: 30px;
-    display: flex; }
-    .content-container .check-tc .fas {
-      color: #40627b;
-      margin-right: 10px; }
-    .content-container .check-tc .text {
+    margin-top: 30px; }
+    .content-container .check-tc label {
       font-size: 1em;
       color: #40627b; }
-      .content-container .check-tc .text span {
+      .content-container .check-tc label span {
         font-weight: bold;
         text-decoration: underline;
         cursor: pointer; }
@@ -216,7 +212,7 @@ p {
       padding: 20px 0;
       width: 100%;
       color: white;
-      background: #40627b;
+      background: #8b9093;
       border: none;
         border-radius: 5px;
       font-size: 1.25em;
